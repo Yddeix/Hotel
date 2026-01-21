@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css?family=Advent+Pro|Dancing+Script&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Advent Pro", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  font-style: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* **************************** NAVBAR ****************************** */
+
+nav {
+  overflow: hidden;
+  background-color: #fffae1;
+  position: fixed;
+  width: 100%;
+  opacity: 0.9;
+}
+
+header li {
+  float: right;
+  font-size: 1.2em;
+}
+
+header li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 18px 16px;
+}
+
+#logo {
+  float: left;
+}
+
+/* ********************* IMAGE PRINCIPALE ************************** */
+
+#imagePrincipale {
+  padding-top: 60px;
+  /* 50 50 pour la centrer au milieu, no repat c'est dans le nom, fixed pour qu'elle ne quitte jamais vraiment l'écran */
+  background: url(./media/image-principale.JPG) no-repeat fixed 50% 50%;
+  /* Pour prendre toute la largeur de lécran */
+  background-size: cover;
+  height: 799px;
+}
+
+h1 {
+  text-align: center;
+  color: antiquewhite;
+  font-size: 6em;
+  margin-top: 110px;
+  text-shadow: 1px 3px 2px black;
+}
+
+/* Utiliser text shadow generator pour voir un panel d'ombre déjà faites */
+
+#premierTrait {
+  height: 1px;
+  width: 25%;
+  margin: -3px auto;
+  background-color: #fffae1;
+  box-shadow: 1px 3px 2px black;
+}
+
+h3 {
+  text-align: center;
+  color: antiquewhite;
+  font-size: 3em;
+  text-shadow: 1px 3px 2px black;
+}
+
+/* ************************* Presentation ************************* */
+
+#presentation {
+  background-color: #fffae1;
+  padding: 10px 0px 100px 0;
+}
+
+#textIntro {
+  padding: 0px 20%;
+}
+
+#prestations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 10%;
+}
+
+.imagePrestations h4 {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 15px;
+  font-weight: 300;
+}
+
+.imagePrestations img {
+  border-radius: 10px;
+  box-shadow: 3px 4px 5px 4px rgba(0, 0, 0, 0.7);
+}
+
+.imagePrestations img:hover {
+  opacity: 0.5;
+  transform: scale(1.05);
+  transition: 0.8s ease-in-out;
+}
+
+/* ************************ TOURISME ******************************** */
+
+#tourisme {
+  height: 1400px;
+  background-color: #f1f2f6;
+  padding: 1px 2%;
+}
+
+#tourisme h2 {
+  padding-top: 60px;
+}
+
+#ocean {
+  background: url(media/ocean.jpg);
+}
+
+#chateau {
+  background: url(./media/chateau.JPG);
+}
+
+#phare {
+  background: url(media/phare.JPG);
+}
+
+#vignoble {
+  background: url(media/vignes.jpg);
+}
+
+#tourisme li {
+  margin: 65px 100px 0 100px;
+  height: 226px;
+  width: 55%;
+  max-width: 550px;
+  float: left;
+  box-shadow: 6px 6px 28px -1px rgba(0, 0, 0, 0.75);
+}
+
+#tourisme p {
+  height: 45px;
+  width: 235px;
+  background-color: #01df74;
+  float: right;
+  margin: 50px -180px 0 0;
+  font-size: 1.5em;
+  text-align: center;
+  padding-top: 15px;
+  box-shadow: 4px 4px 0 1px rgba(90, 163, 43, 1);
+}
+
+#tourisme #chateau,
+#tourisme #vignoble {
+  float: right;
+}
+
+#chateau p,
+#vignoble p {
+  float: left;
+  background-color: cyan;
+  margin-left: -180px;
+  box-shadow: -4px 4px 0 1px rgba(15, 154, 156, 1);
+}
+
+/* ************************ FOOTER ************************* */
+
+footer {
+  background-color: #524a3a;
+  color: #fffae1;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  width: 55%;
+  padding: 15px 10px;
+  margin: 1px 0;
+  font-size: 1.2em;
+  font-family: "Advent Pro", sans-serif;
+  border-radius: 8px;
+}
+
+textarea {
+  height: 120px;
+}
+
+button {
+  font-size: 1.5em;
+  background-color: #fffae1;
+}
+
+button:hover {
+  background-color: orangered;
+  color: #fffae1;
+  cursor: pointer;
+  transition: 1.2s ease-in-out;
+}
+
+#deuxièmeTrait {
+  height: 1px;
+  width: 75%;
+  background-color: #fffae1;
+  margin: 60px auto;
+}
+
+#copyrightEtIcons {
+  display: flex;
+  margin-bottom: 20px;
+  padding: 0 10%;
+}
+
+#copyright {
+  width: 50%;
+  text-align: center;
+  color: #fffae1;
+}
+
+#icons {
+  width: 50%;
+  text-align: right;
+}
+
+#icons a {
+  display: inline-block;
+  margin: 0 15px;
+  font-style: 1.3em;
+  color: #fffae1;
+}
+
+/* Réservation *************************************** */
+
+.contain_all {
+  display: flex;
+}
+
+.hotel_picture {
+  margin-top: 70px;
+  padding: 10px;
+  background: #fffae1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.chambre img {
+  height: 300px;
+}
+
+.reservation-container {
+  background: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #1e3c72;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 80px;
+}

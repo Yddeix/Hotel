@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li id="logo"><a href="./index.html">Clos Marsault</a></li>
+          <li><a href="#langue">Langue</a></li>
+          <li><a href="#reserver">Réserver</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="contain_all">
+        <div class="reservation-container">
+          <h2>Réserver une chambre</h2>
+
+          <form class="reservation-form">
+            <div class="form-group">
+              <label>Nom complet</label>
+              <input
+                id="all_name"
+                type="text"
+                placeholder="Votre nom"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                id="mail"
+                type="email"
+                placeholder="exemple@email.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Téléphone</label>
+              <input id="number" type="tel" placeholder="+229 01 XX XX XX XX" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label>Date d'arrivée</label>
+                <input id="c_day" type="date" required />
+              </div>
+
+              <div class="form-group">
+                <label>Date de départ</label>
+                <input id="l_day" type="date" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Type de chambre</label>
+              <select id="r_type">
+                <option>Chambre simple</option>
+                <option>Chambre double</option>
+                <option>Suite</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label>Message (optionnel)</label>
+              <textarea placeholder="Demandes spéciales..."></textarea>
+            </div>
+
+            <button id="reserve" type="submit" >Réserver maintenant</button>
+          </form>
+        </div>
+        <div class="hotel_picture">
+          <div class="chambre">
+            <img src="media/chambre_simple.jpeg" alt="chambre simple" />
+            <h4>Chambre Simple</h4>
+          </div>
+          <div class="chambre">
+            <img src="media/chambre_double.jpg" alt="chambre double" />
+            <h4>Chambre double</h4>
+          </div>
+          <div class="chambre suite">
+            <img src="media/chambre_suite.jpg" alt="chambre Suite" />
+            <h4>Chambre Suite</h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="hotel.js"></script>
+  </body>
+</html>
